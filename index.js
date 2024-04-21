@@ -79,6 +79,9 @@ const startGame = function () {
   activeGame = true;
   playerWinCount = 0;
   computerWinCount = 0;
+  options.forEach((option) => option.removeAttribute("disabled"));
+  startBtn.setAttribute("disabled", "");
+  resultsArea.textContent = `The game has started. The first player to 5 points wins!`;
 };
 
 const resetGame = function (winner) {
@@ -94,4 +97,6 @@ const resetGame = function (winner) {
   }
 
   activeGame = false;
+  options.forEach((option) => option.setAttribute("disabled", ""));
+  startBtn.removeAttribute("disabled");
 };
