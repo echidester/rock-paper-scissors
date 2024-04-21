@@ -1,0 +1,40 @@
+body {
+  background-color: #fa7070;
+  font-family: "Gill Snas", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 1rem;
+
+  font-size: 1.25rem;
+}
+
+.option,
+#start-btn {
+  font-size: 1rem;
+  background-color: #fefded;
+  color: #fa7070;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+}
+
+.option-btns {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#results {
+  color: #fefded;
+}
+
+*:disabled {
+  opacity: 50%;
+}

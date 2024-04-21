@@ -3,14 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
     <title>Document</title>
   </head>
   <body>
-    <button id="start-btn" value="start">Start Game</button>
-    <button class="option" value="rock" disabled>Rock</button>
-    <button class="option" value="paper" disabled>Paper</button>
-    <button class="option" value="scissors" disabled>Scissors</button>
-    <div id="results"></div>
+    <div class="container">
+      <button id="start-btn" value="start">Start Game</button>
+      <div class="option-btns">
+        <button class="option" value="rock" disabled>Rock</button>
+        <button class="option" value="paper" disabled>Paper</button>
+        <button class="option" value="scissors" disabled>Scissors</button>
+      </div>
+      <div id="results"></div>
+    </div>
     <script src="index.js" type="text/javascript"></script>
   </body>
 </html>
